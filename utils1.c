@@ -6,7 +6,7 @@
 /*   By: emedina- <emedina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 18:51:17 by emedina-          #+#    #+#             */
-/*   Updated: 2023/07/04 21:51:35 by emedina-         ###   ########.fr       */
+/*   Updated: 2023/07/04 22:20:36 by emedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char *ft_aux(unsigned long long n, char *base)
     str[num_len] = '\0';
     while (num_len > 0)
     {
-        num_len = num_len - 1;
+        num_len--;
         str[num_len] = base[n % base_len];
         n /= base_len;
     }

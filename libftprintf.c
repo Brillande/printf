@@ -6,7 +6,7 @@
 /*   By: emedina- <emedina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 21:29:59 by emedina-          #+#    #+#             */
-/*   Updated: 2023/07/04 21:54:13 by emedina-         ###   ########.fr       */
+/*   Updated: 2023/07/04 22:20:09 by emedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	ft_printf(char const *str, ...)
 	va_end(ap);
 	return (counter);
 }
-/*int main()
+int main()
 {
     ft_printf("Caracter: %c\n", 'A');
     ft_printf("Cadena: %s\n", "Hola, mundo!");
@@ -70,4 +70,4 @@ int	ft_printf(char const *str, ...)
     
     return 0;
 }
-*/
+
