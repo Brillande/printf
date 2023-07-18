@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libftprintf.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emedina- <emedina-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: emedina- <emedina-@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 21:29:59 by emedina-          #+#    #+#             */
-/*   Updated: 2023/07/04 22:20:09 by emedina-         ###   ########.fr       */
+/*   Updated: 2023/07/07 10:19:35 by emedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void	ft_choice(va_list ap, char *str, size_t *counter)
 
 int	ft_printf(char const *str, ...)
 {
-	va_list		ap;
-	size_t		counter;
+	va_list	ap;
+	size_t	counter;
 
 	if (!str)
 		return (0);
@@ -58,16 +58,27 @@ int	ft_printf(char const *str, ...)
 	va_end(ap);
 	return (counter);
 }
-int main()
-{
-    ft_printf("Caracter: %c\n", 'A');
-    ft_printf("Cadena: %s\n", "Hola, mundo!");
-    ft_printf("Puntero: %p\n", main);
-    ft_printf("Entero: %u\n", 123456);
-    ft_printf("Hexadecimal (minúsculas): %x\n", 245);
-    ft_printf("Hexadecimal (mayúsculas): %X\n", 245);
-    ft_printf("Porcentaje: %%\n");
-    
-    return 0;
-}
 
+/* int	main(void)
+{
+	ft_printf("Caracter: %c\n", 'A');
+	printf("Caracter: %c\n", 'A');
+	ft_printf("Cadena: %s\n", "Hola, mundo!");
+	printf("Cadena: %s\n", "Hola, mundo!");
+	ft_printf("Puntero: %p\n", main);
+	printf("Puntero: %p\n", main);
+	ft_printf("Entero: %u\n", 123456);
+	printf("Entero: %u\n", 123456);
+	ft_printf("Hexadecimal (minúsculas): %x\n", 245);
+	printf("Hexadecimal (minúsculas): %x\n", 245);
+	ft_printf("Hexadecimal (mayúsculas): %X\n", 245);
+	printf("Hexadecimal (mayúsculas): %X\n", 245);
+	ft_printf("Porcentaje: %%\n");
+	printf("Porcentaje: %%\n");
+	ft_printf("numero positivo %i\n", 33);
+	ft_printf("numero negativo %d\n", -44);
+	printf("numero positivo %i\n", 33);
+	printf("numero negativo %d\n", -44);
+	return (0);
+}
+ */
